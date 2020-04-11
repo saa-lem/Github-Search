@@ -1,4 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { user } from '../user/user.component';
+import { Repo } from '../repo/repo.component';
 
 @Component({
   selector: 'app-gitsearch-form',
@@ -6,6 +8,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./gitsearch-form.component.css']
 })
 export class GitsearchFormComponent implements OnInit {
+  User:user[];
+  repo: Repo [];
 
   @Output() emitUser = new EventEmitter<any>()
 

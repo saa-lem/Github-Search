@@ -11,6 +11,7 @@ export class GitsearchComponent implements OnInit {
   constructor(private kay:ServiceService) { }
 
   ngOnInit():void{
+    
   }
 
 }
