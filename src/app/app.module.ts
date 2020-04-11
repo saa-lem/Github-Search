@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GitsearchComponent } from './gitsearch/gitsearch.component';
     NavbarComponent,
     RepoComponent,
     UserComponent,
-    GitsearchComponent
+    GitsearchComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
