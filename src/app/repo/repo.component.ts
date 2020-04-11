@@ -13,3 +13,6 @@ export class RepoComponent implements OnInit {
   }
 
 }
+export class Repo {
+  constructor(public name:string, public html_url:string,public description:string,public language:string){}
+}

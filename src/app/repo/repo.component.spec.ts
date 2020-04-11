@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RepoComponent } from './repo.component';
+import { RepoComponent, Repo } from './repo.component';
 
 describe('RepoComponent', () => {
   let component: RepoComponent;
@@ -21,5 +21,11 @@ describe('RepoComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+});
+
+describe('Repo', () => {
+  it('should create an instance', () => {
+    expect(Repo ).toBeTruthy();
   });
 });
