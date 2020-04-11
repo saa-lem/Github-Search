@@ -1,0 +1,20 @@
+<div class="container">
+  <ng-progress></ng-progress>
+  <app-gitsearch-form (emitUser)="name($event)"></app-gitsearch-form>
+  <div *ngFor="let use of user">
+      <div class="row">
+          <div class="col-md-6">
+              <h1>{{use.login}}</h1>
+              <p class="text-grey">{{use.name}}</p>
+              <a href="{{use.html_url}}" target="_blank"><img src="{{use.avatar_url}}" alt=""></a>
+          </div>
+          <div class="col-md-6" id="secondcol">
+              <p>Bio: {{use.bio}}<br>Email: {{use.email}}<br>Public Repositories: {{use.public_repos}}<br>Company:
+                  {{use.company}}</p>
+              <button class="btn btn-primary">Followers {{use.followers}}</button>
+              <button class="btn btn-primary" id="scnd">Following {{use.following}}</button>
+              <button class="btn btn-primary" id="third">Public Repositories: {{use.public_repos}}</button>
+          </div>
+      </div>
+  </div>
+</div>
