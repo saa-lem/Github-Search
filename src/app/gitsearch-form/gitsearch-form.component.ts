@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { user } from '../user/user.component';
 import { Repo } from '../repo/repo.component';
-
+import {ServiceService} from '../service.service'
 @Component({
   selector: 'app-gitsearch-form',
   templateUrl: './gitsearch-form.component.html',
@@ -22,6 +22,8 @@ export class GitsearchFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
+
