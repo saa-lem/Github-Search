@@ -18,3 +18,16 @@
       </div>
   </div>
 </div>
+<h2 class="text-center">Public repositories</h2>
+<input type="text" class="form-control" name="" placeholder="Search through repos" id="repoSearch"><br>
+    <div class="card-columns container-fluid">
+        <div *ngFor='let rep of repo'>
+            <div *ngFor='let r of rep' id="repo" class="card">
+                <h4 class="card-header">{{r.name}}</h4>
+                <p class="card-body">Description: {{r.description}}<br>Forks: {{r.forks}}<i><br>Language:
+                        {{r.language}}</i></p>
+                <a class="card-footer" href="{{r.html_url}}"><button class="btn btn-outline-primary">View project on
+                        github</button></a>
+            </div>
+        </div>
+    </div>
