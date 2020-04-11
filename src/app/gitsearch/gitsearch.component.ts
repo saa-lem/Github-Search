@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-gitsearch',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitsearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private kay:ServiceService) { }
 
-  ngOnInit(): void {
+  ngOnInit():void{
   }
 
 }
