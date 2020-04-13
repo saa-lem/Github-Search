@@ -1,6 +1,6 @@
 <div class="container">
   <ng-progress></ng-progress>
-  <app-gitsearch-form (emitUser)="name($event)"></app-gitsearch-form>
+  <app-gitsearch-form (emitUser)="($event)"></app-gitsearch-form>
   <div *ngFor="let use of user">
       <div class="row">
           <div class="col-md-6">
