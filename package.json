@@ -21,7 +21,9 @@
     "@angular/router": "~9.1.0",
     "@ngx-progressbar/core": "^5.3.2",
     "@ngx-progressbar/http-client": "^3.0.2",
+    "module": "^1.2.5",
     "rxjs": "^6.5.5",
+    "rxjs-compat": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
