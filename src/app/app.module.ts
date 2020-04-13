@@ -29,7 +29,7 @@ import { AboutComponent } from './about/about.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgProgressModule.forRoot(),
+    NgProgressModule,
     NgProgressHttpClientModule
   ],
   providers: [],
