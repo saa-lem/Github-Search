@@ -1,7 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { user } from '../user/user.component';
 import { Repo } from '../repo/repo.component';
-import {ServiceService} from '../service.service'
+import { HttpClient } from '@angular/common/http';
+import {ServiceService} from '../service.service';
 @Component({
   selector: 'app-gitsearch-form',
   templateUrl: './gitsearch-form.component.html',

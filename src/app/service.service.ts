@@ -4,6 +4,7 @@ import {UserComponent,user} from './user/user.component'
 import {RepoComponent, Repo} from './repo/repo.component'
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map'
+import { GitsearchComponent } from './gitsearch/gitsearch.component';
 
 @Injectable({
   providedIn: 'root'
