@@ -13,7 +13,6 @@ import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { AboutComponent } from './about/about.component';
-
 @NgModule({
   declarations: [
     AppComponent,
