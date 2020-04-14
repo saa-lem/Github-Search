@@ -3,6 +3,7 @@ import { environment } from '../environments/environment'
 import {UserComponent,user} from './user/user.component'
 import {RepoComponent, Repo} from './repo/repo.component'
 import { HttpClient } from '@angular/common/http';
+import 'rxjs/add/operator/map'
 
 @Injectable({
   providedIn: 'root'
