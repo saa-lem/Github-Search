@@ -1,0 +1,27 @@
+<div class="bg">
+
+  <div class="container">
+    <h4 class="text-center h4 text-white text-white">Search</h4>
+    <app-git-form (emitSearch)="searchRepo($event)"></app-git-form>
+    <hr>
+  </div>
+
+
+  <h2 class="text-center h2 h2-responsive text-white">USER'S GITHUB REPOSITORIES </h2>
+  <div class="container panel-columns">
+    <div class="panel" *ngFor="let gitrepo of gitrepos">
+      <div class="panel">
+        <div class="panel-header text-center purple-gradient text-white">
+          <h2>{{gitrepo.name}}</h2>
+        </div>
+        <div class="panel-body elegant-color white-text">
+          <p class="panel-text"><strong>Description: </strong>{{gitrepo.description}}</p>
+          <p class="panel-text"><strong>Created on: </strong>{{gitrepo.created_at|date}}</p>
+          <p class="panel-text"> <strong>Language Used: </strong> {{gitrepo.language}}.</p>
+          <p class="panel-text"><strong>Days since created: </strong>{{gitrepo.created_at|dateCount}} days ago</p>
+          <a href="{{gitrepo.html_url}}" target="_blank"
+            class="btn btn-outline-secondary waves-effect text-center">View</a>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.btn {
+    margin: 10px;
+  }
+  body{
+    text-decoration-color: white;
+    background: url(assets/landingpage.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Manjari', sans-serif;
+  }

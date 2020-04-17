@@ -1,0 +1,60 @@
+<body>
+    <div class="bg">
+
+
+        <div class="container">
+            <h4 class="text-center h4 text-white ">Search </h4>
+            <app-git-form (emitSearch)="searchGit($event)"></app-git-form>
+            <hr>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container">
+                        <div class="">
+                            <div *ngFor="let github of githubs">
+                                <br><br>
+                                <div class="text-center mt-4 pt-5 ml-4">
+                                    <img src="{{github.avatar_url}}"
+                                        class="align-center img-fluid  z-depth-3" width="60%"
+                                        height="60%" alt="github avatar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="container mt-4">
+                        <h2 class="text-center h2 h2-responsive text-white">GITHUB PROFILE
+                            DETAILS</h2>
+                        <div class="card">
+                            <div *ngFor="let github of githubs">
+                                <div class="">
+                                    <p class="lead"> <strong>Name:</strong> {{github.name}}</p>
+                                    <p> <strong>Username:</strong> {{github.login}}</p>
+                                    <p> <strong>Bio:</strong> {{github.bio}}</p>
+                                    <p> <strong>Public Repos:</strong> {{github.public_repos}}</p>
+                                    <p> <strong>Followers:</strong> {{github.followers}}</p>
+                                    <p> <strong>Following:</strong> {{github.following}}</p>
+                                    <p> <strong>Location:</strong> {{github.location}}</p>
+                                    <p> <strong>Join Date:</strong> {{github.created_at |date}}</p>
+                                    <p><a href="{{github.html_url}}" target="_blank"><button type="button"
+                                                class="btn btn-outline-success waves-effect"><i class="far fa-user pr-2"
+                                                    aria-hidden="true"></i>View Profile on Github</button></a></p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
