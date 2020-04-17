@@ -16,7 +16,7 @@ githubs:Github[];
 
 
   ngOnInit() {
-    this.searchGit("marcusjnls");
+    this.searchGit("saa-lem");
   }
 
   searchGit(searchTerm){

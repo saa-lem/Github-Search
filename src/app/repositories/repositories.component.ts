@@ -15,7 +15,7 @@ export class RepositoriesComponent implements OnInit {
 
 
     ngOnInit() {
-      this.searchRepo("marcusjnls");
+      this.searchRepo("saa-lem");
     }
 
     searchRepo(searchTerm){
